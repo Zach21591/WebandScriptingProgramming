@@ -53,26 +53,43 @@ h3{
     margin-left: 50px;
 }
 
+/*everything within the autoType class will apply here*/
 h3 .autoType{
+    /*color of the text will be a red type of color*/
     color: #E34E02;
+    /*the following margin-top and margin-left values will make it so the text it typed out close to h3*/
     margin-top: -10px;
     margin-left: -40px;
+    /*the content of the text appears as hidden at the start*/
+    overflow: hidden;
 }
 
+/*the name "Zach D'Angelo" will appear and be affeted by everything here*/
 h3 .autoType span {
+    /*adjusts the positioning of the text to be close to the text of h3*/
     position: relative;
+    /*displays the text in a singular line when the text animation happens*/
+    display: inline-block;
+
+/*everything that happens during the text animation happens here*/
 }
 h3 .autoType span::after {
+    /*autoType class does not need any content added, therefore blank*/
     content: "";
+    /*positions the text "Zach D'Angelo" near the text of h3*/
     position: absolute;
     left: 0;
     height: 100%;
     width: 100%;
+    /*the background of the typing is the same as the background as the webpage so it looks like it is actually typing*/
     background: #282DFA;
+    /*cursor color matches the text color*/
     border-left: 2px solid #E34E02;
-    animation: typing 3s steps(15) infinite;
+    /*the amount of times it takes for a text to write itself. This also makes it so the text only writes once*/
+    animation: typing 3s steps(13) 1 forwards;
 }
 
+/*makes the auto typing animation a specific*/
 @keyframes typing {
     100%{
         left: 100%;
