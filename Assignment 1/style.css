@@ -97,3 +97,17 @@ h3 .autoType span::after {
     }
 }
 
+video{
+    margin-top: -20px;
+    margin-left: 290px;
+}
+
+.aboutMeTitle {
+    font-family: "Black Ops One", sans-serif;
+    color: #FAEE0F;
+    font-size: 75px;
+    text-align: center;
+    width: 100%;
+    float: none;
+}
+
