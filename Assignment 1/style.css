@@ -121,7 +121,7 @@ video{
     margin-left: 290px;
 }
 
-.aboutMeTitle {
+.aboutMeTitle,.projectsTitle {
     font-family: "Black Ops One", sans-serif;
     color: #FAEE0F;
     font-size: 75px;
@@ -164,4 +164,19 @@ footer h4 p{
 
 form p label{
     font-family: "Black Ops One", sans-serif;
+}
+
+aside p{
+    font-family: "Black Ops One", sans-serif;
+    font-size: 24px;
+    color: #E34E02;
+    float: right;
+    margin-top: -230px;
+    margin-right: 250px;
+    
+
+}
+
+aside p span{
+    color: #FAEE0F;
 }
