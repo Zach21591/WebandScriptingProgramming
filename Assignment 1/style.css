@@ -8,6 +8,7 @@ body{
     padding: 0px;
     background-image: linear-gradient(#282DFA, black);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 header{
@@ -107,11 +108,14 @@ video{
 }
 
 form{
-    background-color: #BA03FF;
-    display: inline-block;
-    padding: 30px;
-    border-radius: 5px;
+    max-width: 350px;
     margin: auto;
+    padding: 10px;
+    
+}
+
+.submitButton{
+    text-align: center;
 }
 
 p span{
@@ -147,14 +151,28 @@ aside p span{
     color: #FAEE0F;
 }
 
-#row1{
+#row1, #row3{
     background-image: linear-gradient(#e34e02, black 65%);
-}
-
-#row1 .letterCount{
-
 }
 
 #row1 aside p{
     margin-top: -200px;
+    color: #FAEE0F;
+}
+
+#row2{
+    background-image: linear-gradient(black, #e34e02, black 65%, #e34e02);
+}
+
+#row2 aside p{
+    float: right;
+    margin-top: -450px;
+    margin-right: 175px;
+    color: #FAEE0F;
+}
+
+#row3 aside p{
+    margin-right: 220px;
+    margin-top: -165px;
+    color: #FAEE0F;
 }
