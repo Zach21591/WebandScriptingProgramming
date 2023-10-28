@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--title of this specfic page-->
+        <title>PersonalPortfolio - Contact Me</title>
+        <!--makes the webpage responsive-->
+        <meta name="viewport" content="width=device-width">
+        <!--allows the webpage to access the following 3 css files-->
+        <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+    </head>
+    <body>
+        <!--everything in the header goes here-->
+        <header>
+            <!--logo that goes on the top left of the header-->
+            <div class="photoIcon">
+                <img src="logo.png" alt="">
+            </div>
+            <!--displayed to let the viewer know the page they are on-->
+            <h2>Contact Me</h2>
+            <nav>
+                <!--creates links to all the pages of the webpage-->
+                <h1>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact Me</a>
+                </h1>
+            </nav>
+        </header>
+        <!--header ends here-->
+        <!--logo the displays above the form-->
+        <div class="logoForContact">
+                <img src="logo.png" alt="">
+        </div>
+        <!--everything in the form goes here-->
+        <form action="zachary.dangelo@ontariotechu.net" enctype="text/plain" method="post" name="contactForm">
+            <!--form will ask for your name which is required-->
+            <p>
+                <label for="name">Your Name: <span>*</span><br></label>
+                <input type="text" name="name" size="50" placeholder="Enter Name" required>
+            </p>
+            <!--form will ask for your email which is required-->
+            <p>
+                <label for="email">Your Email: <span>*</span><br></label>
+                <input type="email" name="email" size="50" placeholder="Enter Email" required>
+            </p>
+            <!--form will ask for a message/feedback-->
+            <p>
+                <label for="message">Message:<br></label>
+                <textarea name="message" cols="47" rows="10" placeholder="Enter any feedback"></textarea>
+            </p>
+            <!--form will display a submit button for when you finsished the form-->
+            <p>
+                <div class="submitButton">
+                    <input type="submit" value="Submit"/>
+                </div>
+            </p>
+        </form>
+        <!--form ends here-->
+    </body>
+    <!--everything in the footer goes here-->
+    <footer>
+        <!--footer image which will be displayed in the middle of the footer-->
+        <div class="footerImg">
+            <img src="logo.png" alt="">
+        </div>
+        <!--message displayed below the footer photo-->
+        <h4>My name is Zach D'Angelo
+            <!--copyright message in the bottom left-->
+            <p>
+                2023 by <a href="zachary.dangelo@ontariotechu.net">zachary.dangelo@ontariotechu.net</a>
+            </p>
+        </h4>
+    </footer>
+    <!--footer ends here-->
+</html>

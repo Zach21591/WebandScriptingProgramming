@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--title of this specfic page-->
+        <title>PersonalPortfolio - About Me</title>
+        <!--makes the webpage responsive-->
+        <meta name="viewport" content="width=device-width">
+        <!--allows the webpage to access the following 3 css files-->
+        <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+    </head>
+    <body>
+         <!--everything in the header goes here-->
+        <header>
+            <!--logo that goes on the top left of the header-->
+            <div class="photoIcon">
+                <img src="logo.png" alt="">
+            </div>
+            <!--displayed to let the viewer know the page they are on-->
+            <h2>About Me</h2>
+            <nav>
+                <!--creates links to all the pages of the webpage-->
+                <h1>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact Me</a>
+                </h1>
+            </nav>
+        </header>
+        <!--header ends here-->
+        <!--everything below the article goes here-->
+        <article>
+            <ul class="aboutMeTitle">
+                <li>About Me</li>
+            </ul>
+        </article>
+        <!--adds a video on the webpage with controls and the height along with a thumbnail-->
+        <video id="video" controls width="400"  height="350" poster="WebScriptThumbnail.png">
+            <source src="About-Me-Video.mp4" type="video/mp4">
+            <source src="About-Me-Video.ogv" type="video/ogv">
+        </video>
+        <!--a photo of myself-->
+        <div class="myPhoto">
+            <img src="myPhoto.png" alt="">
+        </div>
+        <aside>
+            <!--text that lets the viewer know a little bit about me-->
+            <p>Name:<span>Zach D'Angelo</span><br>Univeristy/College: <span>Ontario Tech University</span><br>Year: <span>2</span><br>Hobbies: <span>Watching Hockey and Basketball</span></p>
+        </aside>
+    </body>
+</html>
