@@ -152,14 +152,14 @@ form p label{
 aside p{
     font-family: "Black Ops One", sans-serif;
     font-size: 10px;
-    color: #E34E02;
+    color: black;
     margin-top: -150px;
     margin-right: 300px;
     float: right;
 }
 
 aside p span{
-    color: #FAEE0F;
+    color: white;
 }
 
 #row1, #row3{

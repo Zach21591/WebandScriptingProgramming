@@ -71,6 +71,121 @@
     <h1 class="display-4"><%= title %></h1>
   </div>
 </div>
+<% if (title == "Home") { %>
+  <article class="homeScreen">
+      <h3>Hello, my name is:<span>Zach D'Angelo</span></h3>
+  </article>
+<% } %>
+<% if (title == "About Me") { %>
+  <video id="video" controls width="400"  height="350" poster="/Assets/images/WebScriptThumbnail.png">
+            <source src="/Assets/videos/About-Me-Video.mp4" type="video/mp4">
+            <source src="/Assets/videos/About-Me-Video.ogv" type="video/ogv">
+        </video>
+        <div class="myPhoto">
+            <img src="/Assets/images/myPhoto.png" alt="">
+        </div>
+        <aside>
+            <p>Name: <span>Zach D'Angelo</span><br>Univeristy/College: <span>Ontario Tech University</span><br>Year: <span>2</span><br>Hobbies: <span>Watching Hockey and Basketball</span></p>
+        </aside>
+<% } %>
+<% if (title == "Projects") { %>
+  <div id="row1">
+            <!--image of the project talked about-->
+            <div class="letterCount">
+                <img src="/Assets/images/LetterCounterPhoto.png" alt="">
+            </div>
+            <aside>
+                <!--the description of the project-->
+                <p>
+                    The photo is the outcome from my python<br>
+                    project called the letter counter. A file<br>
+                    is placed in the same folder as the actual code.<br>
+                    The codes job is to gather all the letters and<br>
+                    print out how many times a letter is displayed<br>
+                    within the text.
+                </p>
+            </aside>
+        </div>
+        <!--everything below is in that specific row of the webpage-->
+        <div id="row2">
+            <!--image of the project talked about-->
+            <div class="calculator">
+                <img src="/Assets/images/CalculatorPhoto.png" alt="">
+            </div>
+            <aside>
+                <!--the description of the project-->
+                <p>
+                    The photo is the outcome from my python<br>
+                    project called the calculator. The user is<br>
+                    asked about whether it wants to use addition,<br>
+                    subtraction, multiplication, or division. The<br>
+                    user enters what they want, which will then be<br>
+                    proceeded with the program asking you to enter two<br>
+                    numbers. The program will end and display all the<br>
+                    answers when "STOP" or "stop" is entered.
+                </p>
+            </aside>
+        </div>
+        <!--everything below is in that specific row of the webpage-->
+        <div id="row3">
+            <!--image of the project talked about-->
+            <div class="bmiCalc">
+                <img src="/Assets/images/BMICalcPhoto.png" alt="">
+            </div>
+            <aside>
+                <!--the description of the project-->
+                <p>
+                    The photo is the outcome from my python<br>
+                    project called the BMI Calculator. A window<br>
+                    is displayed and will have the user enter the<br>
+                    height and weight. The program will than use a<br>
+                    specific formula to calculate whether the person<br>
+                    is underweight, perfectly healthy, or overweight.
+                </p>
+            </aside>
+        </div>
+      <% } %>
+      <% if (title == "Contact Me") { %>
+        <form action="zachary.dangelo@ontariotechu.net" enctype="text/plain" method="post" name="contactForm">
+            <!--form will ask for your name which is required-->
+            <p>
+                <label for="name">Your Name: <span>*</span><br></label>
+                <input type="text" name="name" size="50" placeholder="Enter Name" required>
+            </p>
+            <!--form will ask for your email which is required-->
+            <p>
+                <label for="email">Your Email: <span>*</span><br></label>
+                <input type="email" name="email" size="50" placeholder="Enter Email" required>
+            </p>
+            <!--form will ask for a message/feedback-->
+            <p>
+                <label for="message">Message:<br></label>
+                <textarea name="message" cols="47" rows="10" placeholder="Enter any feedback"></textarea>
+            </p>
+            <!--form will display a submit button for when you finsished the form-->
+            <p>
+                <div class="submitButton">
+                    <input type="submit" value="Submit"/>
+                </div>
+            </p>
+        </form>
+        <!--form ends here-->
+    </body>
+    <!--everything in the footer goes here-->
+    <footer>
+        <!--footer image which will be displayed in the middle of the footer-->
+        <div class="footerImg">
+            <img src="/Assets/images/logo.png" alt="" width="40" height="40">
+        </div>
+        <!--message displayed below the footer photo-->
+        <h4>My name is Zach D'Angelo
+            <!--copyright message in the bottom left-->
+            <p>
+                2023 by <a href="zachary.dangelo@ontariotechu.net">zachary.dangelo@ontariotechu.net</a>
+            </p>
+        </h4>
+    </footer>
+  <% } %>
 </main>
   </body>
 </html>
