@@ -11,7 +11,7 @@
   </head>
   <body>
   <!--navbar from bootstrap-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-gray">
   <div class="container-fluid">
   <nav class="navbar bg-body-tertiary">
   <!--image in navbar from bootstrap-->
@@ -20,27 +20,57 @@
       <img src="/Assets/images/logo.png" alt="" width="40" height="40">
     </a>
   </div>
+  <!--code for image in navbar from bootstrap ends-->
 </nav>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-house fa-lg"></i> Home</a>
+        <% if (title == "Home") { %>
+          <a class="nav-link active" aria-current="page" href="/home">
+        <% } else { %>
+          <a class="nav-link" aria-current="page" href="/home">
+        <% } %>
+          <i class="fa-solid fa-house fa-lg"></i> Home</a>
         </li>
+
         <li class="nav-item1">
-          <a class="nav-link" aria-current="page" href="/about"><i class="fa-solid fa-address-card fa-lg"></i> About Me</a>
+        <% if (title == "About Me") { %>
+          <a class="nav-link active" aria-current="page" href="/about">
+        <% } else { %>
+          <a class="nav-link" aria-current="page" href="/about">
+        <% } %>
+          <i class="fa-solid fa-address-card fa-lg"></i> About Me</a>
         </li>
+
         <li class="nav-item2">
-          <a class="nav-link" aria-current="page" href="/projects"><i class="fa-brands fa-r-project fa-lg"></i> Projects</a>
+        <% if (title == "Projects") { %>
+          <a class="nav-link active" aria-current="page" href="/projects">
+        <% } else { %>
+          <a class="nav-link" aria-current="page" href="/projects">
+        <% } %>
+          <i class="fa-brands fa-r-project fa-lg"></i> Projects</a>
         </li>
+
         <li class="nav-item3">
-          <a class="nav-link" aria-current="page" href="/contacts"><i class="fa-solid fa-phone fa-lg"></i> Contact Me</a>
+        <% if (title == "Contact Me") { %>
+          <a class="nav-link active" aria-current="page" href="/contacts">
+        <% } else { %>
+          <a class="nav-link" aria-current="page" href="/contacts">
+        <% } %>
+          <i class="fa-solid fa-phone fa-lg"></i> Contact Me</a>
         </li>
     </div>
   </div>
 </nav>
-    <h1><%= title %></h1>
+<main>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><%= title %></h1>
+  </div>
+</div>
+</main>
   </body>
 </html>
