@@ -20,7 +20,6 @@ header{
 }
 
 footer{
-    background-color: #1EE68C;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -72,7 +71,7 @@ h2{
     font-family: "Black Ops One", sans-serif;
     font-weight: 400;
     font-size: 40px;
-    color: #E34E02;
+    color: white;
     padding: 0px 3px;
 }
 
@@ -85,7 +84,7 @@ h3{
 }
 
 h3 span{
-    color: #E34E02;
+    color: white;
     margin-top: -10px;
     margin-left: 0px;
     overflow: hidden;
@@ -163,33 +162,33 @@ aside p span{
 }
 
 #row1, #row3{
-    background-image: linear-gradient(#e34e02, black 65%);
+    /*background-image: linear-gradient(#e34e02, black 65%);*/
 }
 
 #row1 aside p{
     margin-top: -200px;
-    color: #FAEE0F;
+    color: white;
     font-size: 40%;
     margin-right: 170px;
     margin-top: -130px;
 }
 
 #row2{
-    background-image: linear-gradient(black, #e34e02, black 65%, #e34e02);
+    /*background-image: linear-gradient(black, #e34e02, black 65%, #e34e02);*/
 }
 
 #row2 aside p{
     float: right;
     margin-top: -250px;
     margin-right: 150px;
-    color: #FAEE0F;
+    color: white;
     font-size: 40%;
 }
 
 #row3 aside p{
     margin-right: 160px;
     margin-top: -70px;
-    color: #FAEE0F;
+    color: white;
     font-size: 40%;
 }
 
@@ -209,8 +208,22 @@ aside p span{
 }
 
 .container .display-4 {
-    margin-left: -90px;
+    margin-left: 100px;
     margin-top: 15px;
     color: black;
     font-family: "Black Ops One", sans-serif;
+}
+
+p, footer h4 {
+    color: white;
+    font-size: 16px;
+}
+
+article h3{
+    color: black;
+    font-size: 100px;
+}
+
+article h3 span {
+    color: white;
 }

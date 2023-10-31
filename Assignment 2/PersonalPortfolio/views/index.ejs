@@ -15,19 +15,26 @@
   <div class="container-fluid">
   <nav class="navbar bg-body-tertiary">
   <!--image in navbar from bootstrap-->
+  <!--creates a class for the image-->
   <div class="container">
+    <!--creates another class that specificly identifies the image on the navbar-->
     <a class="navbar-brand" href="/home">
+      <!--sets the image along with its respective weight and height-->
       <img src="/Assets/images/logo.png" alt="" width="40" height="40">
     </a>
   </div>
   <!--code for image in navbar from bootstrap ends-->
 </nav>
+    <!--creates a class for the navbar buttons along with its respective properties-->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!--creates a class for the toggler on the navbar-->
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <!--creates a class for the first button called nav item-->
         <li class="nav-item">
+        <!--if statement is created for when the home page is displayed-->
         <% if (title == "Home") { %>
           <a class="nav-link active" aria-current="page" href="/home">
         <% } else { %>
@@ -51,7 +58,7 @@
         <% } else { %>
           <a class="nav-link" aria-current="page" href="/projects">
         <% } %>
-          <i class="fa-brands fa-r-project fa-lg"></i> Projects</a>
+          <i class="fa-solid fa-diagram-project fa-lg"></i> Projects</a>
         </li>
 
         <li class="nav-item3">
@@ -181,7 +188,9 @@
         <h4>My name is Zach D'Angelo
             <!--copyright message in the bottom left-->
             <p>
-                2023 by <a href="zachary.dangelo@ontariotechu.net">zachary.dangelo@ontariotechu.net</a>
+                2023 by <a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJVFWCBZXdzKnmXpMZLrKwXNvTSrZFFDFwQQLkmhWkcPRxxPQDhLpkvdHlGJFXRBQjSb">zachary.dangelo@ontariotechu.net<br></a>
+                Github: <a href="https://github.com/Zach21591">Zach21591<br></a>
+                Linkdin: None
             </p>
         </h4>
     </footer>

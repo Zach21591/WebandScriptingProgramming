@@ -25,7 +25,6 @@ header{
 
 footer{
     /*makes the footer color this specific color*/
-    background-color: #1EE68C;
     /*adjusts the size of the footer*/
     padding-top: 10px;
     padding-bottom: 10px;
@@ -89,7 +88,7 @@ h2{
     font-family: "Black Ops One", sans-serif;
     font-weight: 400;
     font-size: 40px;
-    color: #E34E02;
+    color: white;
     padding: 0px 3px;
 }
 
@@ -168,6 +167,7 @@ footer h4 p{
 /*all labels in the form are the font below*/
 form p label{
     font-family: "Black Ops One", sans-serif;
+    color: black;
 }
 
 /*adjusts the text location and color on the about me page*/
@@ -187,18 +187,18 @@ aside p span{
 
 /*makes row 1 and row 3 have a gradient background different from all the other pages*/
 #row1, #row3{
-    background-image: linear-gradient(#e34e02, black 65%);
+    /*background-image: linear-gradient(#e34e02, black 65%);*/
 }
 
 /*adjusts the color and the positioning of the project description*/
 #row1 aside p{
     margin-top: -200px;
-    color: #FAEE0F;
+    color: white;
 }
 
 /*makes row 2 have a gradient background to fit in perfectly with the other rows*/
 #row2{
-    background-image: linear-gradient(black, #e34e02, black 65%, #e34e02);
+    /*background-image: linear-gradient(black, #e34e02, black 65%, #e34e02);*/
 }
 
 /*adjusts the color and the positioning of the project description*/
@@ -206,19 +206,39 @@ aside p span{
     float: right;
     margin-top: -450px;
     margin-right: 175px;
-    color: #FAEE0F;
+    color: white;
 }
 
 /*adjusts the color and the positioning of the project description*/
 #row3 aside p{
     margin-right: 220px;
     margin-top: -165px;
-    color: #FAEE0F;
+    color: white;
 }
 
+/*makes changes to the jumbotron*/
 .container .display-4 {
+    /*adjusts how much the text goes left*/
     margin-left: -90px;
+    /*adjusts how close the text is to the top*/
     margin-top: 15px;
+    /*chanegs the text color to black*/
     color: black;
+    /*makes the font Black Ops One*/
     font-family: "Black Ops One", sans-serif;
+}
+
+/*changes the color of the text and size in the contact me page*/
+p, footer h4 {
+    color: white;
+    font-size: 16px;
+}
+
+article h3{
+    color: black;
+    font-size: 100px;
+}
+
+article h3 span {
+    color: white;
 }
