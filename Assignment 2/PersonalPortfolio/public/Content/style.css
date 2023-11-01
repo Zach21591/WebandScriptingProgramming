@@ -17,7 +17,7 @@ body{
 
 header{
     /*makes the header color this specific color*/
-    background-color: #1EE68C;
+    /*background-color: #1EE68C;*/
     /*adjusts the sixe of the header*/
     padding-top: 5px;
     padding-bottom: 5px;
@@ -48,13 +48,13 @@ h1 a{
     padding: 0px 3px;
 }
 
-.photoIcon img{
+.navbar-brand img{
     /*changes the size of the image*/
     width: 50px;
     height: auto;
     position: absolute;
     /*adjusts the image so its not touching the borders*/
-    top: 15px;
+    top: -10px;
     left: 5px;
 }
 
@@ -241,4 +241,14 @@ article h3{
 
 article h3 span {
     color: white;
+}
+
+form {
+    max-width: 350px;
+    margin: auto;
+    padding: 10px;
+}
+
+form p input {
+    max-width: 370px;
 }
