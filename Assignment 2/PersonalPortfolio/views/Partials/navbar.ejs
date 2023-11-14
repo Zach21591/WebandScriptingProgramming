@@ -1,0 +1,49 @@
+<!--anything in the navbar goes here-->
+</nav>
+    <!--creates a class for the navbar buttons along with its respective properties-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!--creates a class for the toggler on the navbar-->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <!--creates a class for the first button called nav item-->
+        <li class="nav-item">
+        <!--if statement is created for when the home page is displayed. If title is Home, link will be darker than the rest; Else, light (applies to the next 3 if statements)-->
+        <% if (title == "Home") { %>
+          <a class="nav-link active"  href="/home">
+        <% } else { %>
+          <a class="nav-link" href="/home">
+        <% } %>
+          <i class="fa-solid fa-house fa-lg"></i> Home</a>
+        </li>
+
+        <li class="nav-item1">
+        <% if (title == "About Me") { %>
+          <a class="nav-link active"  href="/about">
+        <% } else { %>
+          <a class="nav-link"  href="/about">
+        <% } %>
+          <i class="fa-solid fa-address-card fa-lg"></i> About Me</a>
+        </li>
+
+        <li class="nav-item2">
+        <% if (title == "Projects") { %>
+          <a class="nav-link active"  href="/projects">
+        <% } else { %>
+          <a class="nav-link"  href="/projects">
+        <% } %>
+          <i class="fa-solid fa-diagram-project fa-lg"></i> Projects</a>
+        </li>
+
+        <li class="nav-item3">
+        <% if (title == "Contact Me") { %>
+          <a class="nav-link active"  href="/contacts">
+        <% } else { %>
+          <a class="nav-link"  href="/contacts">
+        <% } %>
+          <i class="fa-solid fa-phone fa-lg"></i> Contact Me</a>
+        </li>
+    </div>
+  </div>
+</nav>

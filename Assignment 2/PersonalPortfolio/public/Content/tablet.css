@@ -161,9 +161,9 @@ aside p span{
     color: white;
 }
 
-#row1, #row3{
+/*#row1, #row3{*/
     /*background-image: linear-gradient(#e34e02, black 65%);*/
-}
+/*}*/
 
 #row1 aside p{
     margin-top: -200px;
@@ -173,9 +173,9 @@ aside p span{
     margin-top: -130px;
 }
 
-#row2{
+/*#row2{*/
     /*background-image: linear-gradient(black, #e34e02, black 65%, #e34e02);*/
-}
+/*}*/
 
 #row2 aside p{
     float: right;
